@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1000"
+    tools:context=".InflateActivity">
+
+    <LinearLayout
+        android:id="@+id/addLinear"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="150"
+        android:orientation="horizontal"
+        android:weightSum="1000">
+
+        <!-- 1. Icon -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="200">
+
+            <ImageView
+                android:id="@+id/img_appIcon"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="5dp" />
+        </LinearLayout>
+
+        <!-- 2. Text -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="600">
+
+            <TextView
+                android:id="@+id/tv_appName"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="5dp"
+                android:gravity="center|left"
+                android:textColor="@android:color/black"
+                android:textSize="20dp" />
+        </LinearLayout>
+        <!-- 3. Button -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="200">
+
+            <ImageButton
+                android:id="@+id/btn_onoffButton"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

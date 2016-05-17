@@ -37,16 +37,16 @@ public class FloatingActionsMenu extends ViewGroup {
 
   private int mAddButtonPlusColor;
   private int mAddButtonColorNormal;
-  private int mAddButtonColorPressed;
+  public static int mAddButtonColorPressed;
   private int mAddButtonSize;
-  private boolean mAddButtonStrokeVisible;
-  private int mExpandDirection;
+  public static boolean mAddButtonStrokeVisible;
+  public static int mExpandDirection;
 
   private int mButtonSpacing;
   private int mLabelsMargin;
   private int mLabelsVerticalOffset;
 
-  private boolean mExpanded;
+  public static boolean mExpanded;
 
   private AnimatorSet mExpandAnimation = new AnimatorSet().setDuration(ANIMATION_DURATION);
   private AnimatorSet mCollapseAnimation = new AnimatorSet().setDuration(ANIMATION_DURATION);

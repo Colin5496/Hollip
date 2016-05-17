@@ -1,221 +1,317 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:fab="http://schemas.android.com/apk/res-auto"
-    android:background="@color/background"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:id="@+id/main_back"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/mainhollip"
+    android:orientation="vertical"
+    android:weightSum="1000">
 
-    <com.getbase.floatingactionbutton.FloatingActionButton
-        android:id="@+id/pink_icon"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        fab:fab_icon="@drawable/ic_fab_star"
-        fab:fab_colorNormal="@color/pink"
-        fab:fab_colorPressed="@color/pink_pressed"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="16dp"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@id/pink_icon"
-        android:text="Text below button"
-        android:layout_centerHorizontal="true"
-        style="@style/menu_labels_style"
-        android:layout_marginBottom="48dp"/>
+    <!-- 무쓸모 -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_weight="100">
 
-    <com.getbase.floatingactionbutton.AddFloatingActionButton
-        android:id="@+id/semi_transparent"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@id/pink_icon"
-        fab:fab_plusIconColor="@color/white"
-        fab:fab_colorNormal="@color/blue_semi_transparent"
-        fab:fab_colorPressed="@color/blue_semi_transparent_pressed"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="16dp"/>
 
-    <com.getbase.floatingactionbutton.FloatingActionButton
-        android:id="@+id/setter"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@id/semi_transparent"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="16dp"/>
+        <Button
+            android:id="@+id/btn_bt"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignLeft="@+id/videoView"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/videoView"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:text=""
+            android:singleLine="false"
+            android:background="#0000" />
 
-    <com.getbase.floatingactionbutton.AddFloatingActionButton
-        android:id="@+id/normal_plus"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        fab:fab_plusIconColor="@color/half_black"
-        fab:fab_colorNormal="@color/white"
-        fab:fab_colorPressed="@color/white_pressed"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginStart="16dp"/>
+        <VideoView
+            android:id="@+id/videoView"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_alignBottom="@+id/tv_voice"
+            android:layout_alignParentTop="true"
+            android:visibility="invisible" />
 
-    <com.getbase.floatingactionbutton.FloatingActionsMenu
-        android:id="@+id/right_labels"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_above="@id/normal_plus"
-        android:layout_marginLeft="16dp"
-        android:layout_marginStart="16dp"
-        fab:fab_addButtonColorNormal="@color/white"
-        fab:fab_addButtonColorPressed="@color/white_pressed"
-        fab:fab_addButtonPlusIconColor="@color/half_black"
-        fab:fab_addButtonSize="mini"
-        fab:fab_labelStyle="@style/menu_labels_style"
-        fab:fab_labelsPosition="right">
+        <com.getbase.floatingactionbutton.FloatingActionsMenu
+            android:id="@+id/multiple_actions"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:visibility="invisible"
+            fab:fab_addButtonColorNormal="@color/white"
+            fab:fab_addButtonColorPressed="@color/white_pressed"
+            fab:fab_addButtonPlusIconColor="@color/half_black"
+            fab:fab_labelStyle="@style/menu_labels_style">
 
-        <com.getbase.floatingactionbutton.FloatingActionButton
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/action_a"
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                fab:fab_colorNormal="@color/white"
+                fab:fab_colorPressed="@color/white_pressed"
+                fab:fab_icon="@drawable/img_clock" />
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/action_b"
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                fab:fab_colorNormal="@color/white"
+                fab:fab_colorPressed="@color/white_pressed"
+                fab:fab_icon="@drawable/img_weather" />
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/action_c"
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                fab:fab_colorNormal="@color/white"
+                fab:fab_colorPressed="@color/white_pressed"
+                fab:fab_icon="@drawable/img_none" />
+
+        </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+        <Button
+            android:id="@+id/btn_weather"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_above="@+id/btn_clock"
+            android:layout_toLeftOf="@+id/tv_voice"
+            android:layout_toStartOf="@+id/tv_voice"
+            android:text="날씨"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/btn_clock"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_alignTop="@+id/btn_spam"
+            android:layout_toEndOf="@+id/btn_spam"
+            android:layout_toRightOf="@+id/btn_spam"
+            android:text="시계"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/btn_admin"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/btn_weather"
+            android:layout_toRightOf="@+id/btn_weather"
+            android:text="권한"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/btn_spam"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_alignLeft="@+id/videoView"
+            android:layout_alignStart="@+id/videoView"
+            android:layout_below="@+id/btn_bt"
+            android:text="스팸"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/tv_voice"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_above="@+id/btn_spam"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="47dp"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Button
+            android:id="@+id/btn_lighton"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_centerHorizontal="true"
+
+            android:layout_marginBottom="44dp"
+            android:background="#0000" />
+
+        <Button
+            android:id="@+id/btn_lightoff"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_alignLeft="@+id/btn_lighton"
+            android:layout_alignStart="@+id/btn_lighton"
+            android:layout_alignTop="@+id/btn_lighton"
+            android:layout_marginTop="60dp"
+            android:background="#0000" />
+
+        <TextView
+            android:id="@+id/tv_nowrgb"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_alignBaseline="@+id/check_box_onoff"
+            android:layout_alignBottom="@+id/check_box_onoff"
+            android:layout_toEndOf="@+id/btn_clock"
+            android:layout_toRightOf="@+id/btn_clock"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:visibility="invisible" />
+
+        <!--<Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            fab:fab_colorNormal="@color/white"
-            fab:fab_title="Label on the right"
-            fab:fab_colorPressed="@color/white_pressed"/>
+            android:text="DB"
+            android:id="@+id/btn_db"
+            android:layout_alignBottom="@+id/btn_setting" />-->
 
-        <com.getbase.floatingactionbutton.FloatingActionButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            fab:fab_colorNormal="@color/white"
-            fab:fab_size="mini"
-            fab:fab_title="Another one on the right"
-            fab:fab_colorPressed="@color/white_pressed"/>
+    </LinearLayout>
 
-    </com.getbase.floatingactionbutton.FloatingActionsMenu>
 
-    <com.getbase.floatingactionbutton.FloatingActionsMenu
-        android:id="@+id/multiple_actions"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        fab:fab_addButtonColorNormal="@color/white"
-        fab:fab_addButtonColorPressed="@color/white_pressed"
-        fab:fab_addButtonPlusIconColor="@color/half_black"
-        fab:fab_labelStyle="@style/menu_labels_style"
-        android:layout_marginBottom="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginEnd="16dp">
+    <!-- 쓸모 -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="500"
+        android:orientation="horizontal"
+        android:weightSum="1000">
 
-        <com.getbase.floatingactionbutton.FloatingActionButton
-            android:id="@+id/action_a"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            fab:fab_colorNormal="@color/white"
-            fab:fab_title="Action A"
-            fab:fab_colorPressed="@color/white_pressed"/>
+        <!-- 홀립 왼쪽 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="250" />
 
-        <com.getbase.floatingactionbutton.FloatingActionButton
-            android:id="@+id/action_b"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            fab:fab_colorNormal="@color/white"
-            fab:fab_title="Action with a very long name that won\'t fit on the screen"
-            fab:fab_colorPressed="@color/white_pressed"/>
+        <!-- 홀립 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="600">
 
-    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
 
-    <com.getbase.floatingactionbutton.FloatingActionsMenu
-        android:id="@+id/multiple_actions_down"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentTop="true"
-        fab:fab_addButtonColorNormal="@color/white"
-        fab:fab_addButtonColorPressed="@color/white_pressed"
-        fab:fab_addButtonSize="mini"
-        fab:fab_addButtonPlusIconColor="@color/half_black"
-        fab:fab_expandDirection="down"
-        fab:fab_labelStyle="@style/menu_labels_style"
-        android:layout_marginTop="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginEnd="16dp">
+                <!-- 백그라운드 -->
+                <Button
+                    android:id="@+id/color_change"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:background="#0000"
+                    android:layout_marginLeft="27dp"
+                    android:layout_marginTop="41dp"
+                    android:gravity="center"
+                    android:paddingBottom="50dp" />
 
-        <com.getbase.floatingactionbutton.FloatingActionButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            fab:fab_colorNormal="@color/white"
-            fab:fab_colorPressed="@color/white_pressed"
-            fab:fab_size="mini"/>
 
-        <com.getbase.floatingactionbutton.FloatingActionButton
-            android:id="@+id/button_remove"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            fab:fab_colorNormal="@color/white"
-            fab:fab_colorPressed="@color/white_pressed"
-            fab:fab_title="Click to remove"/>
+                <!-- 스위치 -->
+                <CheckBox
+                    android:id="@+id/check_box_onoff"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_horizontal"
+                    android:button="@drawable/checkbox"
+                    android:checked="false" />
 
-        <com.getbase.floatingactionbutton.FloatingActionButton
-            android:id="@+id/button_gone"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            fab:fab_colorNormal="@color/white"
-            fab:fab_colorPressed="@color/white_pressed"/>
+            </RelativeLayout>
 
-        <com.getbase.floatingactionbutton.FloatingActionButton
-            android:id="@+id/action_enable"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            fab:fab_colorNormal="@color/white"
-            fab:fab_title="Set bottom menu enabled/disabled"
-            fab:fab_colorPressed="@color/white_pressed"/>
+        </LinearLayout>
 
-    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+        <!-- 홀립 오른쪽 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="150" />
 
-    <com.getbase.floatingactionbutton.FloatingActionsMenu
-        android:id="@+id/multiple_actions_left"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toLeftOf="@+id/multiple_actions_down"
-        android:layout_toStartOf="@+id/multiple_actions_down"
-        android:layout_alignParentTop="true"
-        fab:fab_addButtonColorNormal="@color/white"
-        fab:fab_addButtonColorPressed="@color/white_pressed"
-        fab:fab_addButtonSize="mini"
-        fab:fab_addButtonPlusIconColor="@color/half_black"
-        fab:fab_addButtonStrokeVisible="false"
-        fab:fab_expandDirection="left"
-        android:layout_marginTop="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginEnd="16dp">
+    </LinearLayout>
 
-        <com.getbase.floatingactionbutton.FloatingActionButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            fab:fab_colorNormal="@color/white"
-            fab:fab_colorPressed="@color/white_pressed"/>
 
-        <com.getbase.floatingactionbutton.FloatingActionButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            fab:fab_colorNormal="@color/white"
-            fab:fab_colorPressed="@color/white_pressed"
-            fab:fab_size="mini"/>
+    <!-- 색깔 버튼 있는 곳 -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="100"
+        android:orientation="horizontal"
+        android:weightSum="1000">
 
-        <com.getbase.floatingactionbutton.FloatingActionButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:visibility="gone"
-            fab:fab_colorNormal="@color/white"
-            fab:fab_colorPressed="@color/white_pressed"
-            fab:fab_size="mini"/>
+        <!-- 색깔 왼쪽 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="425">
 
-    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+        </LinearLayout>
 
-    <com.getbase.floatingactionbutton.FloatingActionButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/setter_drawable"
-        android:layout_above="@id/setter"
-        android:layout_centerHorizontal="true"/>
-</RelativeLayout>
+        <!-- 색깔 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="150">
+            <!-- 색깔 버튼 -->
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/shin_1" />
+        </LinearLayout>
+
+        <!-- 색깔 오른쪽 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_weight="425">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- 색깔과 버튼 -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="120" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="140"
+        android:orientation="horizontal"
+        android:weightSum="1000">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="400" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="200">
+
+            <ImageButton
+                android:id="@+id/btn_setting"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#0000"
+                android:scaleType="fitXY"
+                android:src="@drawable/plus" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="400" />
+    </LinearLayout>
+
+    <!-- 맨 아래 -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="60" />
+</LinearLayout>

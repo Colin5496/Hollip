@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1000"
+    tools:context=".AppListActivity"
+    android:background="@android:color/white">
+
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="900">
+
+        <!-- Add Application -->
+        <LinearLayout
+
+            android:id="@+id/inflatedLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:weightSum="900">
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <!-- Add Button -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="100"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onAddBtnClicked"
+            android:text="Add Application" />
+
+    </LinearLayout>
+</LinearLayout>

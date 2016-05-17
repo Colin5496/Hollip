@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/SingleProfile"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1000"
+    android:background="@drawable/bottom_gray_border"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="300">
+
+        <TextView
+            android:id="@+id/mem_name"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="4dp"
+            android:layout_marginLeft="1dp"
+            android:textSize="20dp"
+            android:textColor="@android:color/black"
+            android:scaleType="centerCrop" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="700">
+        <TextView
+            android:id="@+id/mem_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:text="M1867654"
+            android:textColor="@android:color/black"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+</LinearLayout>

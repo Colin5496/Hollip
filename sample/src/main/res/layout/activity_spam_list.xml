@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1000"
+    tools:context=".SpamlistActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="100"
+        >
+        <TextView
+            android:gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="Spam List"
+            android:textSize="30dp"
+            android:textColor="@android:color/black"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="700">
+
+        <ListView
+            android:id="@+id/list_Contact"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+             />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="200">
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:onClick="onAddUserBtnClicked"
+            android:text="Add User List" />
+
+    </LinearLayout>
+
+</LinearLayout>

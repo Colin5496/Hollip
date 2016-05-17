@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1000"
+    android:background="@drawable/mainhollip"
+    tools:context=".SwipeActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="823.70">
+
+        <ListView
+            android:id="@+id/cmn_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="433dp"
+            android:animateLayoutChanges="true"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:fadeScrollbars="true"
+            android:smoothScrollbar="true"></ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="187.86"
+        android:gravity="center">
+
+
+        <ImageButton
+            android:id="@+id/btn_add"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="onAddBtnClicked"
+            android:background="@drawable/plus2"
+            android:layout_marginRight="280dp" />
+    </LinearLayout>
+</LinearLayout>

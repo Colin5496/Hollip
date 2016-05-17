@@ -1,0 +1,105 @@
+<com.getbase.floatingactionbutton.sample.ReverseAbleRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/reverse_clock"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/black"
+        android:orientation="horizontal"
+        android:weightSum="1000">
+
+        <!-- Left -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="600"
+            android:orientation="vertical"
+            android:weightSum="1000">
+
+            <!-- Video (Top) -->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="100">
+
+                <TextView
+                    android:id="@+id/tv_clocktop"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+
+
+            <!-- Center -->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="800"
+                android:gravity="center|right">
+
+                <AnalogClock
+                    android:id="@+id/analog_clock"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp" />
+            </LinearLayout>
+
+
+            <!-- Video (Bottom) -->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="100">
+
+                <TextView
+                    android:id="@+id/tv_clockbottom"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:textColor="@android:color/white"
+                    android:textSize="10dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Right -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="400"
+            android:orientation="vertical"
+            android:weightSum="1000">
+
+            <!-- Video (Top) -->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="100" />
+
+
+            <!-- Video (Center) -->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="800">
+
+
+                <TextView
+
+                    android:id="@+id/tv_clockcenter"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="36dp" />
+            </LinearLayout>
+
+            <!-- Line -->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="100" />
+
+        </LinearLayout>
+    </LinearLayout>
+</com.getbase.floatingactionbutton.sample.ReverseAbleRelativeLayout>

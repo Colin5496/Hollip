@@ -1,0 +1,25 @@
+<com.getbase.floatingactionbutton.sample.ReverseAbleRelativeLayout
+    android:id="@+id/reverse_layer"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/mTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/transparent"
+        android:gravity="right|center">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="지민짱"
+            android:textColor="@android:color/white"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+             />
+    </LinearLayout>
+</com.getbase.floatingactionbutton.sample.ReverseAbleRelativeLayout>

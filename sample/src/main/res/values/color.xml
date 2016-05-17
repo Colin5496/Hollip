@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Color Palette -->
+
+
+    <!-- Theme colors -->
+    <color name="theme_light">#F48FB1</color>
+    <color name="theme_default_primary">#EC407A</color>
+    <color name="theme_window_background">#2A2A2A</color>
+    <color name="accent">#ff4081</color>
+    <color name="gray_row_color">#ff515252</color>
+
+
+    <color name="primary">#009688</color>
+    <color name="primaryDark">#00796b</color>
+    <color name="accentLight">#F4FF81</color>
+
+    <!-- Dialer theme -->
+    <color name="dialer_call">#00C853</color>
+    <color name="theme_dialer_high">#0277BD</color>
+    <color name="theme_dialer_primary">#0288D1</color>
+    <color name="theme_dialer_accent">#FFF</color>
+
+    <!-- Reveal transition colors -->
+    <color name="color_set_1_primary">#4fc3f7</color>
+    <color name="color_set_1_accent">#009688</color>
+
+    <color name="color_set_2_primary">#42bd41</color>
+    <color name="color_set_2_accent">#673AB7</color>
+
+    <color name="color_set_3_primary">#ffb74d</color>
+    <color name="color_set_3_accent">#E91E63</color>
+
+    <color name="color_set_4_primary">#ff8a65</color>
+    <color name="color_set_4_accent">#d500f9</color>
+
+
+    <color name="ripple">#ff80ab</color>
+    <color name="accent_pressed">#f50057</color>
+
+    <color name="powderblue">#B0E0E6</color>
+    <color name="lightblue">#ADD8E6</color>
+
+    <color name="darkturquoise">#00CED1</color>
+    <color name="lessdarkurquoise">#75e5e6</color>
+
+    <color name="lightskyblue">#87CEFA</color>
+    <color name="darkcyan">#008B8B</color>
+
+    <color name="text_black">#000000</color>
+    <color name="text_white">#FFFFFF</color>
+
+    <color name="tab_color_1">#00e7eb</color>
+
+
+    <color name="deepskyblue">#00BFFF</color>
+    <color name="dodgerblue">#1E90FF</color>
+    <color name="cornflowerblue">#6495ED</color>
+    <color name="royalblue">#4169E1</color>
+    <color name="mediumblue">#0000CD</color>
+
+    <color name="darkslateblue">#483D8B</color>
+    <color name="slateblue">#6A5ACD</color>
+    <color name="mediumslateblue">#7B68EE</color>
+    <color name="mediumpurple">#9370DB</color>
+
+    <color name="lightgrey">#D3D3D3</color>
+    <color name="darkgray">#A9A9A9</color>
+    <color name="lightslategray">#778899</color>
+    <color name="slategray">#708090</color>
+    <color name="gray">#808080</color>
+
+    <color name="dimgray">#696969</color>
+    <color name="namigreen">#ff6bd973</color>
+    <color name="forestgreen">#228B22</color>
+    <color name="limegreen">#32CD32</color>
+
+    <color name="namizzang">#2cbc60</color>
+
+    <color name="appgray">#4b6468</color>
+    <color name="bottmcolor">#0094ce</color>
+    <color name="topcolor">#2eb6a8</color>
+
+    <color name="buttonColor">#474747</color>
+    <color name="myRed">#FF0000</color>
+</resources>
+
+
